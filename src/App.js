@@ -1,64 +1,44 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Interests from "./components/Interests";
+import Contact from "./components/Contact";
 
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-          <a className="navbar-brand js-scroll-trigger" href="#page-top">
-            <span className="d-block d-lg-none">Clarence Taylor</span>
-            <span className="d-none d-lg-block">
-              <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="my_avatar.png" alt="" />
-            </span>
-          </a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#education">Education</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <Navbar />
 
         <div className="container-fluid p-0">
 
           <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
             <div className="w-100">
-              <h1 className="mb-0">Clarence
-                <span className="text-primary">Taylor</span>
-              </h1>
-              <div className="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                <a href="mailto:name@email.com">name@email.com</a>
+              <div className="subheading">
+                <span>WEB DEVELOPER</span>
+              </div>
+              <h2 className="mb-0">
+                <span className="text-primary">NIKOLAOS NIKOLAOU</span>
+              </h2>
+              <div className="subheading mb-5">
+                <span>When simplicity meets creativity</span>
               </div>
               <p className="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
               <div className="social-icons">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/nikolaos-nikolaou-585407127/" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#">
+                <a href="https://github.com/nikolaounkl" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-facebook-f"></i>
+                <a href="https://codepen.io/nikolaounkl/" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-codepen"></i>
                 </a>
               </div>
             </div>
@@ -224,8 +204,26 @@ class App extends Component {
             </div>
           </section>
 
+          <hr className="m-0" />
+
+          <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
+            <div className="w-100">
+              <h2 className="mb-5">Contact</h2>
+              <p>Together we can make our ideas reality!</p>
+            </div>
+          </section>
+
         </div>
     </div>
+      <Switch>
+        <Route path="/" component={About} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/skills" component={Experience} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/interests" component={Interests} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </BrowserRouter>
     );
   }
 }
