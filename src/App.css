@@ -1,42 +1,54 @@
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  padding-top: 54px;
-  color: white;
-  background: black;
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding-top: 54px;
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("/images/berlin.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (min-width: 992px) {
-  body {
-    padding: 0 5rem 0 12rem;
-  }
+    body {
+        padding: 0 6rem 0 11rem;
+    }
+}
+
+.active {
+    color: white;
 }
 
 /* ========================== */
 /* ======= Scrollbar ======== */
 /* ========================== */
 ::-webkit-scrollbar {
-  width: 15px;
+    width: 15px;
+    display: none;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fdd247;
-  border-radius: 10px;
+    background: #fdd247;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 h1,
@@ -45,223 +57,236 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fdd247;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fdd247;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+    font-size: 6rem;
+    line-height: 5.5rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+    font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+    font-size: 1.15rem;
+    font-weight: 400;
 }
 
 p {
-  text-align: justify;
+    text-align: justify;
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-size: 1.5rem;
 }
 
-.mobile-logo {
-  color: #fdd247;
-  text-shadow: 2px 0px white;
-  transition: all 0.2s ease-in-out;
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+#experience .subheading {
+    text-transform: none;
 }
 
 .social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #fdd247;
-  color: black !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-  transition: all 0.2s ease-in-out;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #fdd247;
+    color: black !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-right: 1rem;
+    transition: all 0.2s ease-in-out;
 }
 
 .social-icons a:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .social-icons a:hover {
-  background-color: white;
+    background-color: white;
 }
 
 .dev-icons {
-  font-size: 3rem;
-
+    font-size: 3rem;
 }
 
 .dev-icons .list-inline-item i {
-  color: #fdd247;
-  transition: all 0.2s ease-in-out;
+    color: #fdd247;
+    transition: all 0.2s ease-in-out;
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: white;
+    color: white;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-  color: #fdd247;
-  transition: all 0.2s ease-in-out;
-  margin: 0 5px;
+    color: #fdd247;
+    transition: all 0.2s ease-in-out;
+    margin: 0 5px;
 }
 
 #sideNav .navbar-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link:hover {
-  color: white;
-}
-
-#sideNav .navbar-toggler:focus {
-  outline-color: #fdd247;
-}
-
-#sideNav .navbar-brand .img-profile {
-  max-width: 3rem;
-  max-height: 3rem;
-  border: 0.2rem solid rgba(255,255,255,0.8);
-  position: absolute;
-  left: 1rem;
-  top: 0.6rem;
-  background: #fdd247;
-  transition: all 0.2s ease-in-out;
-}
-
-#sideNav .navbar-brand .img-profile:hover {
-  background: black;
+    color: white;
 }
 
 #sideNav .menu {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
+#sideNav .navbar-brand {
+    display: none;
+}
+
+.navbar {
+    justify-content: center !important;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+section.portfolio-section {
+    position: relative;
+}
+
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 7rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 5rem;
-    max-height: 5rem;
-    border: 0.2rem solid rgba(255,255,255,0.8);
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    background: #fdd247;
-    transition: all 0.2s ease-in-out;
-  }
-  #sideNav .navbar-brand .img-profile:hover {
-    background: white;
-  }
-  #sideNav .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .menu .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .menu .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .menu .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
-}
-
-section.portfolio-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.portfolio-section {
-    min-height: 100vh;
-  }
-  section.portfolio-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
+    background: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 992px) {
-  section.portfolio-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
+    h2 {
+        font-size: 3.5rem;
+    }
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 6rem;
+        height: 100vh;
+    }
+    #sideNav .navbar-brand {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+    #sideNav .navbar-brand .img-profile {
+        max-width: 4rem;
+        max-height: 4rem;
+        border: 0.2rem solid rgba(255, 255, 255, 0.8);
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        background: #fdd247;
+        transition: all 0.2s ease-in-out;
+    }
+    #sideNav .navbar-brand .img-profile:hover {
+        background: white;
+    }
+    #sideNav .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: center;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+    #sideNav .menu .navbar-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sideNav .menu .navbar-nav .nav-item {
+        display: block;
+    }
+    #sideNav .menu .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+section.portfolio-section .resume-item .resume-date {
+    min-width: none;
+}
+
+@media (min-width: 768px) {
+    section.portfolio-section {
+        min-height: 100vh;
+    }
+    section.portfolio-section .resume-item .resume-date {
+        min-width: 18rem;
+    }
+}
+
+@media (min-width: 992px) {
+    section.portfolio-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
 }
 
 .bg-primary {
-  background-color: black !important;
-  box-shadow: 0px 0px 10px 0px white;
+    background-color: black !important;
+    box-shadow: 0px 0px 10px 0px white;
 }
 
 .text-primary {
-  color: #fdd247 !important;
+    color: #fdd247 !important;
 }
 
 a {
-  color: #fdd247;
+    color: #fdd247;
 }
 
-a:hover, a:focus, a:active {
-  color: white;
+a:hover,
+a:focus,
+a:active {
+    color: white;
 }
