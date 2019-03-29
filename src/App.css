@@ -3,13 +3,40 @@ body {
   padding-top: 54px;
   color: white;
   background: black;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 @media (min-width: 992px) {
   body {
-    padding-top: 0;
-    padding-left: 17rem;
+    padding: 0 5rem 0 12rem;
   }
+}
+
+/* ========================== */
+/* ======= Scrollbar ======== */
+/* ========================== */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fdd247;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.8);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(255,255,255,0.8);
 }
 
 h1,
@@ -40,6 +67,10 @@ h3 {
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+}
+
+p {
+  text-align: justify;
 }
 
 .subheading {
@@ -95,11 +126,15 @@ p.lead {
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
   color: #fdd247;
   transition: all 0.2s ease-in-out;
+  margin: 0 5px;
+}
+
+#sideNav .navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link:hover {
@@ -110,23 +145,24 @@ p.lead {
   outline-color: #fdd247;
 }
 
-#sidenav {
-  background: #fdd247;
-}
-
 #sideNav .navbar-brand .img-profile {
   max-width: 3rem;
   max-height: 3rem;
   border: 0.2rem solid rgba(255,255,255,0.8);
   position: absolute;
   left: 1rem;
-  top: 0.2rem;
+  top: 0.6rem;
   background: #fdd247;
   transition: all 0.2s ease-in-out;
 }
 
 #sideNav .navbar-brand .img-profile:hover {
   background: black;
+}
+
+#sideNav .menu {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (min-width: 992px) {
@@ -142,7 +178,7 @@ p.lead {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 12rem;
+    width: 7rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -157,7 +193,7 @@ p.lead {
     max-height: 5rem;
     border: 0.2rem solid rgba(255,255,255,0.8);
     position: absolute;
-    left: 3.5rem;
+    left: 1rem;
     top: 1rem;
     background: #fdd247;
     transition: all 0.2s ease-in-out;
@@ -165,7 +201,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile:hover {
     background: white;
   }
-  #sideNav .navbar-collapse {
+  #sideNav .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -178,42 +214,36 @@ p.lead {
     width: 100%;
     margin-bottom: auto;
   }
-  #sideNav .navbar-collapse .navbar-nav {
+  #sideNav .menu .navbar-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
   }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
+  #sideNav .menu .navbar-nav .nav-item {
     display: block;
   }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  #sideNav .menu .navbar-nav .nav-item .nav-link {
     display: block;
   }
 }
 
-section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 75rem;
-}
-
-section.resume-section .resume-item .resume-date {
+section.portfolio-section .resume-item .resume-date {
   min-width: none;
 }
 
 @media (min-width: 768px) {
-  section.resume-section {
+  section.portfolio-section {
     min-height: 100vh;
   }
-  section.resume-section .resume-item .resume-date {
+  section.portfolio-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
 
 @media (min-width: 992px) {
-  section.resume-section {
+  section.portfolio-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }

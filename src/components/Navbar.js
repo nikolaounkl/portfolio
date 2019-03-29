@@ -9,39 +9,37 @@ export default function Navbar() {
               <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="my_avatar.png" alt="" />
             </span>
           </Link>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div className="menu">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <NavLink to="/" className="nav-link" exact activeClassName="activeLink">
-                    <i className="fas fa-home" />
+                  <i class="fas fa-address-card fa-2x"></i>
                 </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to="/" className="nav-link" exact activeClassName="activeLink">
-                    <i className="fas fa-home" />
+                <NavLink to="/skills" className="nav-link" exact activeClassName="activeLink">
+                  <i className="fas fa-cogs fa-2x" />
                 </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to="/" className="nav-link" exact activeClassName="activeLink">
-                    <i className="fas fa-home" />
+                <NavLink to="/experience" className="nav-link" exact activeClassName="activeLink">
+                  <i class="fas fa-history fa-2x"></i>
                 </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to="/" className="nav-link" exact activeClassName="activeLink">
-                    <i className="fas fa-home" />
+                <NavLink to="/projects" className="nav-link" exact activeClassName="activeLink">
+                  <i class="fas fa-images fa-2x"></i>
                 </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to="/" className="nav-link" exact activeClassName="activeLink">
-                    <i className="fas fa-home" />
+                <NavLink to="/interests" className="nav-link" exact activeClassName="activeLink">
+                  <i class="fas fa-thumbs-up fa-2x"></i>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/" className="nav-link" exact activeClassName="activeLink">
-                    <i className="fas fa-home" />
+                <NavLink to="/contact" className="nav-link" exact activeClassName="activeLink">
+                <i class="fas fa-envelope fa-2x"></i>
                 </NavLink>
               </li>
             </ul>
