@@ -11,18 +11,7 @@ export default function Contact() {
                 <div className="w-100">
                     <h2 className="mb-5">Contact</h2>
                     <p>Together we can make our ideas reality!</p>
-                    <form
-                        name="contact"
-                        method="POST"
-                        netlify-honeypot="bot-field"
-                        data-netlify="true"
-                    >
-                        <p class="hidden">
-                            <label>
-                                Don’t fill this out if you're human:{" "}
-                                <input name="bot-field" />
-                            </label>
-                        </p>
+                    <form name="contact" method="POST" data-netlify="true">
                         <p>
                             <label>
                                 Your Name: <input type="text" name="name" />
@@ -31,12 +20,6 @@ export default function Contact() {
                         <p>
                             <label>
                                 Your Email: <input type="email" name="email" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                Your Subject:{" "}
-                                <input type="text" name="subject" />
                             </label>
                         </p>
                         <p>
