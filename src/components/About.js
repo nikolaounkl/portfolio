@@ -16,7 +16,7 @@ export default function About() {
                         <span className="title">NIKOLAOS NIKOLAOU</span>
                     </h2>
                     <div className="subheading mb-5">
-                        <span>WEB DEVELOPER / WORDPRESS</span>
+                        <span>WEB DEVELOPER</span>
                     </div>
                     <p className="lead mb-5">
                         I am experienced in leveraging agile frameworks to

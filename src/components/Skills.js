@@ -72,7 +72,7 @@ export default function Skills() {
                         </li>
                         <li>
                             <i className="fa-li fa fa-check" />
-                            Mobile-First, Responsive Design
+                            Cross Devices, Responsive Design
                         </li>
                         <li>
                             <i className="fa-li fa fa-check" />

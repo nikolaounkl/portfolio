@@ -32,7 +32,7 @@ export default function Experience() {
 
                     <div className="portfolio-item d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div className="resume-content">
-                            <h3 className="mb-0">Front-End Web Developer</h3>
+                            <h3 className="mb-0">Front-End Web Development</h3>
                             <div className="subheading mb-0">Freelancer</div>
                             <span className="text-primary">
                                 July 2015 - Present
