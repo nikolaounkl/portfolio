@@ -11,20 +11,15 @@ export default function Contact() {
                 <div className="w-100">
                     <h2 className="mb-5">Contact</h2>
                     <p>Together we can make our ideas reality!</p>
-                    <form name="contact" method="POST" netlify>
+                    <form name="contact" netlify>
                         <p>
                             <label>
-                                Your Name: <input type="text" name="name" />
+                                Name <input type="text" name="name" />
                             </label>
                         </p>
                         <p>
                             <label>
-                                Your Email: <input type="email" name="email" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                Message: <textarea name="message" />
+                                Email <input type="email" name="email" />
                             </label>
                         </p>
                         <p>
