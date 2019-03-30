@@ -11,7 +11,7 @@ export default function Contact() {
                 <div className="w-100">
                     <h2 className="mb-5">Contact</h2>
                     <p>Together we can make our ideas reality!</p>
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" netlify>
                         <p>
                             <label>
                                 Your Name: <input type="text" name="name" />
