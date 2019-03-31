@@ -4,20 +4,27 @@ import { createContact } from "../store/actions/contactActions";
 
 class Contact extends Component {
     state = {
-        name: "",
-        email: "",
-        message: ""
+        name: [{ value: "" }, { valid: "" }],
+        email: [{ value: "" }, { valid: "" }],
+        message: [{ value: "" }, { valid: "" }]
     };
     handleChange = e => {
         this.setState({
-            [e.target.id]: e.target.value
+            [e.target.id]: [{ value: e.target.value }, { valid: "" }]
         });
     };
     handleSubmit = e => {
         e.preventDefault();
-        console.log(this.state);
-        // this.props.createContact(this.state);
-        // this.props.history.push("/");
+        if (
+            this.state.name[0].value &&
+            this.state.email[0].value &&
+            this.state.message[0].value
+        ) {
+            this.props.createContact(this.state);
+            this.props.history.push("/");
+        } else {
+            return false;
+        }
     };
     render() {
         return (
@@ -31,29 +38,50 @@ class Contact extends Component {
                         <h2 className="mb-5">Contact</h2>
                         <p>Together we can make our ideas reality!</p>
                         <form onSubmit={this.handleSubmit}>
-                            <p>
+                            <div className="form-group">
                                 <input
                                     type="text"
                                     id="name"
                                     onChange={this.handleChange}
+                                    className={
+                                        !this.state.name[0].value
+                                            ? "form-control is-invalid"
+                                            : "form-control is-valid"
+                                    }
+                                    placeholder="Your Name"
                                 />
-                            </p>
-                            <p>
+                            </div>
+                            <div className="form-group">
                                 <input
                                     type="text"
                                     id="email"
                                     onChange={this.handleChange}
+                                    className={
+                                        !this.state.email[0].value
+                                            ? "form-control is-invalid"
+                                            : "form-control is-valid"
+                                    }
+                                    placeholder="Your Email"
                                 />
-                            </p>
-                            <p>
-                                <textarea
+                            </div>
+                            <div className="form-group">
+                                <input
+                                    type="text"
                                     id="message"
                                     onChange={this.handleChange}
+                                    className={
+                                        !this.state.message[0].value
+                                            ? "form-control is-invalid"
+                                            : "form-control is-valid"
+                                    }
+                                    placeholder="Your Message"
                                 />
-                            </p>
-                            <p>
-                                <button>Send</button>
-                            </p>
+                            </div>
+                            <div className="form-group">
+                                <button className="btn btn-secondary btn-block">
+                                    Send
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </section>
