@@ -26,7 +26,7 @@ export default function Navbar() {
                             exact
                             activeClassName="active"
                         >
-                            <i class="fas fa-address-card fa-2x" />
+                            <i className="fas fa-address-card fa-2x" />
                         </NavLink>
                     </li>
                     <li className="nav-item">
@@ -44,7 +44,7 @@ export default function Navbar() {
                             className="nav-link"
                             activeClassName="active"
                         >
-                            <i class="fas fa-history fa-2x" />
+                            <i className="fas fa-history fa-2x" />
                         </NavLink>
                     </li>
                     <li className="nav-item">
@@ -53,7 +53,7 @@ export default function Navbar() {
                             className="nav-link"
                             activeClassName="active"
                         >
-                            <i class="fas fa-images fa-2x" />
+                            <i className="fas fa-images fa-2x" />
                         </NavLink>
                     </li>
                     <li className="nav-item">
@@ -62,7 +62,7 @@ export default function Navbar() {
                             className="nav-link"
                             activeClassName="active"
                         >
-                            <i class="fas fa-thumbs-up fa-2x" />
+                            <i className="fas fa-thumbs-up fa-2x" />
                         </NavLink>
                     </li>
                     <li className="nav-item">
@@ -71,7 +71,7 @@ export default function Navbar() {
                             className="nav-link"
                             activeClassName="active"
                         >
-                            <i class="fas fa-envelope fa-2x" />
+                            <i className="fas fa-envelope fa-2x" />
                         </NavLink>
                     </li>
                 </ul>
