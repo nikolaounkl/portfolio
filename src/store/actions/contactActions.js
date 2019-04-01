@@ -4,7 +4,9 @@ export const createContact = contact => {
         firestore
             .collection("contacts")
             .add({
-                ...contact,
+                name: contact.name,
+                email: contact.email,
+                message: contact.message,
                 createdAt: new Date()
             })
             .then(() => {

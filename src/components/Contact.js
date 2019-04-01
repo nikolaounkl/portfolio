@@ -4,24 +4,24 @@ import { createContact } from "../store/actions/contactActions";
 
 class Contact extends Component {
     state = {
-        name: [{ value: "" }, { valid: "" }],
-        email: [{ value: "" }, { valid: "" }],
-        message: [{ value: "" }, { valid: "" }]
+        name: "",
+        email: "",
+        message: ""
     };
     handleChange = e => {
         this.setState({
-            [e.target.id]: [{ value: e.target.value }, { valid: "" }]
+            [e.target.id]: e.target.value
         });
     };
     handleSubmit = e => {
         e.preventDefault();
-        if (
-            this.state.name[0].value &&
-            this.state.email[0].value &&
-            this.state.message[0].value
-        ) {
+        if (this.state.name && this.state.email && this.state.message) {
             this.props.createContact(this.state);
-            this.props.history.push("/");
+            this.setState({
+                name: "",
+                email: "",
+                message: ""
+            });
         } else {
             return false;
         }
@@ -44,10 +44,11 @@ class Contact extends Component {
                                     id="name"
                                     onChange={this.handleChange}
                                     className={
-                                        !this.state.name[0].value
+                                        !this.state.name
                                             ? "form-control is-invalid"
                                             : "form-control is-valid"
                                     }
+                                    value={this.state.name}
                                     placeholder="Your Name"
                                 />
                             </div>
@@ -57,10 +58,11 @@ class Contact extends Component {
                                     id="email"
                                     onChange={this.handleChange}
                                     className={
-                                        !this.state.email[0].value
+                                        !this.state.email
                                             ? "form-control is-invalid"
                                             : "form-control is-valid"
                                     }
+                                    value={this.state.email}
                                     placeholder="Your Email"
                                 />
                             </div>
@@ -70,10 +72,11 @@ class Contact extends Component {
                                     id="message"
                                     onChange={this.handleChange}
                                     className={
-                                        !this.state.message[0].value
+                                        !this.state.message
                                             ? "form-control is-invalid"
                                             : "form-control is-valid"
                                     }
+                                    value={this.state.message}
                                     placeholder="Your Message"
                                 />
                             </div>
