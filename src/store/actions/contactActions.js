@@ -6,6 +6,7 @@ export const createContact = contact => {
             .add({
                 name: contact.name,
                 email: contact.email,
+                subject: contact.subject,
                 message: contact.message,
                 createdAt: new Date()
             })
