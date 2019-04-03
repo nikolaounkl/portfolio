@@ -14,6 +14,9 @@ class Contact extends Component {
             [e.target.id]: e.target.value
         });
     };
+    handleKeyPress = e => {
+        console.log(e.target.value);
+    };
     handleSubmit = e => {
         e.preventDefault();
         if (this.state.name && this.state.email && this.state.message) {
@@ -38,14 +41,14 @@ class Contact extends Component {
                 >
                     <div className="w-100">
                         <h2 className="mb-5">Contact</h2>
-                        <p>Together we can make our ideas reality!</p>
                         <form onSubmit={this.handleSubmit}>
-                            <div class="form-row">
+                            <div className="form-row">
                                 <div className="form-group col-md-6">
                                     <input
                                         type="text"
                                         id="name"
                                         onChange={this.handleChange}
+                                        onKeyPress={this.handleKeyPress}
                                         className="form-control"
                                         value={this.state.name}
                                         placeholder="Your Name"
@@ -56,6 +59,7 @@ class Contact extends Component {
                                         type="text"
                                         id="email"
                                         onChange={this.handleChange}
+                                        onKeyPress={this.handleKeyPress}
                                         className="form-control"
                                         value={this.state.email}
                                         placeholder="Your Email"
@@ -67,6 +71,7 @@ class Contact extends Component {
                                     type="text"
                                     id="subject"
                                     onChange={this.handleChange}
+                                    onKeyPress={this.handleKeyPress}
                                     className="form-control"
                                     value={this.state.subject}
                                     placeholder="Your Subject"
@@ -77,6 +82,7 @@ class Contact extends Component {
                                     type="text"
                                     id="message"
                                     onChange={this.handleChange}
+                                    onKeyPress={this.handleKeyPress}
                                     className="form-control"
                                     value={this.state.message}
                                     placeholder="Your Message"
