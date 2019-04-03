@@ -6,6 +6,7 @@ class Contact extends Component {
     state = {
         name: "",
         email: "",
+        subject: "",
         message: ""
     };
     handleChange = e => {
@@ -20,6 +21,7 @@ class Contact extends Component {
             this.setState({
                 name: "",
                 email: "",
+                subject: "",
                 message: ""
             });
         } else {
@@ -38,53 +40,52 @@ class Contact extends Component {
                         <h2 className="mb-5">Contact</h2>
                         <p>Together we can make our ideas reality!</p>
                         <form onSubmit={this.handleSubmit}>
-                            <div className="form-group">
-                                <input
-                                    type="text"
-                                    id="name"
-                                    onChange={this.handleChange}
-                                    className={
-                                        !this.state.name
-                                            ? "form-control is-invalid"
-                                            : "form-control is-valid"
-                                    }
-                                    value={this.state.name}
-                                    placeholder="Your Name"
-                                />
+                            <div class="form-row">
+                                <div className="form-group col-md-6">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        onChange={this.handleChange}
+                                        className="form-control"
+                                        value={this.state.name}
+                                        placeholder="Your Name"
+                                    />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <input
+                                        type="text"
+                                        id="email"
+                                        onChange={this.handleChange}
+                                        className="form-control"
+                                        value={this.state.email}
+                                        placeholder="Your Email"
+                                    />
+                                </div>
                             </div>
                             <div className="form-group">
                                 <input
                                     type="text"
-                                    id="email"
+                                    id="subject"
                                     onChange={this.handleChange}
-                                    className={
-                                        !this.state.email
-                                            ? "form-control is-invalid"
-                                            : "form-control is-valid"
-                                    }
-                                    value={this.state.email}
-                                    placeholder="Your Email"
+                                    className="form-control"
+                                    value={this.state.subject}
+                                    placeholder="Your Subject"
                                 />
                             </div>
                             <div className="form-group">
-                                <input
+                                <textarea
                                     type="text"
                                     id="message"
                                     onChange={this.handleChange}
-                                    className={
-                                        !this.state.message
-                                            ? "form-control is-invalid"
-                                            : "form-control is-valid"
-                                    }
+                                    className="form-control"
                                     value={this.state.message}
                                     placeholder="Your Message"
+                                    rows="7"
                                 />
                             </div>
-                            <div className="form-group">
-                                <button className="btn btn-secondary btn-block">
-                                    Send
-                                </button>
-                            </div>
+                            <button className="btn btn-yellow btn-block">
+                                Send
+                            </button>
                         </form>
                     </div>
                 </section>
