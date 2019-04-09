@@ -19,9 +19,9 @@ class Contact extends Component {
     handleSubmit = e => {
         e.preventDefault();
         if (
-            this.state.name ||
-            this.state.email ||
-            this.state.message ||
+            this.state.name &&
+            this.state.email &&
+            this.state.message &&
             this.state.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
         ) {
             this.props.createContact(this.state);
@@ -111,7 +111,7 @@ class Contact extends Component {
                             className={
                                 this.state.error
                                     ? "show-error bg-danger text-white"
-                                    : "hide-error bg-danger text-white d-none"
+                                    : "hide-error bg-danger text-white"
                             }
                         >
                             {this.state.error &&
