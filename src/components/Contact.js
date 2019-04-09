@@ -7,25 +7,41 @@ class Contact extends Component {
         name: "",
         email: "",
         subject: "",
-        message: ""
+        message: "",
+        error: ""
     };
     handleChange = e => {
         this.setState({
             [e.target.id]: e.target.value
         });
+        console.log(this.state);
     };
     handleSubmit = e => {
         e.preventDefault();
-        if (this.state.name && this.state.email && this.state.message) {
+        if (
+            this.state.name ||
+            this.state.email ||
+            this.state.message ||
+            this.state.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
+        ) {
             this.props.createContact(this.state);
             this.setState({
                 name: "",
                 email: "",
                 subject: "",
-                message: ""
+                message: "",
+                error: false
             });
+            setTimeout(
+                function() {
+                    this.props.history.push("/");
+                }.bind(this),
+                5000
+            );
         } else {
-            return false;
+            this.setState({
+                error: true
+            });
         }
     };
     render() {
@@ -38,11 +54,11 @@ class Contact extends Component {
                 >
                     <div className="w-100">
                         <h2 className="mb-5">Contact</h2>
-                        <form autocomplete="off" onSubmit={this.handleSubmit}>
+                        <form autoComplete="off" onSubmit={this.handleSubmit}>
                             <div className="form-row">
                                 <div className="form-group col-md-6">
                                     <input
-                                        autocomplete="off"
+                                        autoComplete="off"
                                         type="text"
                                         id="name"
                                         onChange={this.handleChange}
@@ -53,7 +69,7 @@ class Contact extends Component {
                                 </div>
                                 <div className="form-group col-md-6">
                                     <input
-                                        autocomplete="off"
+                                        autoComplete="off"
                                         type="text"
                                         id="email"
                                         onChange={this.handleChange}
@@ -65,7 +81,7 @@ class Contact extends Component {
                             </div>
                             <div className="form-group">
                                 <input
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     type="text"
                                     id="subject"
                                     onChange={this.handleChange}
@@ -76,7 +92,7 @@ class Contact extends Component {
                             </div>
                             <div className="form-group">
                                 <textarea
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     type="text"
                                     id="message"
                                     onChange={this.handleChange}
@@ -90,6 +106,35 @@ class Contact extends Component {
                                 Send
                             </button>
                         </form>
+
+                        <p
+                            className={
+                                this.state.error
+                                    ? "show-error bg-danger text-white"
+                                    : "hide-error bg-danger text-white d-none"
+                            }
+                        >
+                            {this.state.error &&
+                            !this.state.email.match(
+                                /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i
+                            )
+                                ? "Use a valid email!"
+                                : this.state.error &&
+                                  this.state.email.match(
+                                      /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i
+                                  )
+                                ? "All fields are required!"
+                                : ""}
+                        </p>
+                        <p
+                            className={
+                                !this.state.error && this.state.error !== ""
+                                    ? "show-success bg-success text-white"
+                                    : "hide-success bg-success text-white"
+                            }
+                        >
+                            Your message is sent!
+                        </p>
                     </div>
                 </section>
             </div>

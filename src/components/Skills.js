@@ -60,11 +60,15 @@ export default function Skills() {
                     <ul className="fa-ul mb-0">
                         <li>
                             <i className="fa-li fa fa-check" />
-                            Full-Stack Web Development
+                            Front-end Web Development
                         </li>
                         <li>
                             <i className="fa-li fa fa-check" />
-                            Building Single & Multiple Page Applications
+                            Back-end Web Development
+                        </li>
+                        <li>
+                            <i className="fa-li fa fa-check" />
+                            Cloud Services
                         </li>
                         <li>
                             <i className="fa-li fa fa-check" />
@@ -72,7 +76,11 @@ export default function Skills() {
                         </li>
                         <li>
                             <i className="fa-li fa fa-check" />
-                            Cross Devices, Responsive Design
+                            Cross Devices optimisation
+                        </li>
+                        <li>
+                            <i className="fa-li fa fa-check" />
+                            Responsive Design
                         </li>
                         <li>
                             <i className="fa-li fa fa-check" />

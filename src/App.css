@@ -325,3 +325,47 @@ textarea::placeholder {
     border: 1px solid white;
     background: white;
 }
+
+.hide-error {
+    position: fixed;
+    bottom: 10px;
+    left: -180px;
+    width: auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: left 0.5s ease-in-out;
+}
+
+.show-error {
+    position: fixed;
+    bottom: 10px;
+    left: 120px;
+    width: auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: left 0.5s ease-in-out;
+}
+
+.hide-success {
+    position: fixed;
+    bottom: 10px;
+    left: -180px;
+    width: auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: left 0.5s ease-in-out;
+}
+
+.show-success {
+    position: fixed;
+    bottom: 10px;
+    left: 120px;
+    width: auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: left 0.5s ease-in-out;
+}

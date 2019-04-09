@@ -16,14 +16,17 @@ export default function About() {
                         <span className="title">NIKOLAOS NIKOLAOU</span>
                     </h2>
                     <div className="subheading mb-5">
-                        <span>WEB DEVELOPER</span>
+                        <span>FRONT-END WEB DEVELOPER</span>
                     </div>
                     <p className="lead mb-5">
-                        I am experienced in leveraging agile frameworks to
-                        provide a robust synopsis for high level overviews.{" "}
-                        <br /> Iterative approaches to corporate strategy foster
-                        collaborative thinking to further the overall value
-                        proposition.
+                        Hi... I'm Nikos, a web developer based in Berlin,
+                        Germany.
+                        <br /> <br />
+                        My main area of expertise is front-end web development
+                        of web apps.
+                        <br /> With a strong focus on cross-device & browsers
+                        optimisation and continuously learning and keeping track
+                        on new technologies that can improve my daily workflow.
                     </p>
                     <div className="social-icons">
                         <a
