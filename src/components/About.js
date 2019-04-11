@@ -25,7 +25,7 @@ export default function About() {
                         My main area of expertise is front-end web development
                         of web apps.
                         <br /> With a strong focus on cross-device & browsers
-                        optimisation and continuously learning and keeping track
+                        optimisation, continuously learning <br/>and keeping track
                         on new technologies that can improve my daily workflow.
                     </p>
                     <div className="social-icons">
