@@ -5,7 +5,7 @@ export default function Skills() {
         <div>
             <div className="overlay" />
             <section
-                className="portfolio-section p-3 p-lg-5 d-flex align-items-center"
+                className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="skills"
             >
                 <div className="w-100">

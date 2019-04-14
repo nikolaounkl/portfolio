@@ -5,7 +5,7 @@ export default function Interests() {
         <div>
             <div className="overlay" />
             <section
-                className="portfolio-section p-3 p-lg-5 d-flex align-items-center"
+                className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="interests"
             >
                 <div className="w-100">
@@ -13,12 +13,15 @@ export default function Interests() {
                     <p>
                         Apart from being a web developer, I enjoy most of my
                         time being outdoors (well...as long the weather allows
-                        it!). With my wife we love travelling and discovering
-                        the nature. Hiking, swimming, basketball and tennis are
-                        some of my favourite activities during the warm months!.
+                        it!). <br />
+                        With my wife we love travelling and discovering the
+                        nature. <br />
+                        Hiking, swimming, basketball and tennis are some of my
+                        favourite activities during the warm months!. <br />
                         In the cold winter days, Netflix, Liverpool FC & NBA are
-                        the antidotes. I love Greek food... and the kitchen is
-                        my kingdom!
+                        the antidotes. <br />
+                        I'm born and raised in Athens, Greece, which means...
+                        cooking delicious Greek food is my duty!
                     </p>
                 </div>
             </section>

@@ -5,7 +5,7 @@ export default function About() {
         <div>
             <div className="overlay" />
             <section
-                className="portfolio-section p-3 p-lg-5 d-flex align-items-center"
+                className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="about"
             >
                 <div className="w-100">
@@ -21,12 +21,13 @@ export default function About() {
                     <p className="lead mb-5">
                         Hi... I'm Nikos, a web developer based in Berlin,
                         Germany.
-                        <br /> <br />
+                        <br />
+                        <br />
                         My main area of expertise is front-end web development
-                        of web apps.
-                        <br /> With a strong focus on cross-device & browsers
-                        optimisation and continuously learning and keeping track
-                        on new technologies that can improve my daily workflow.
+                        of web apps. <br /> With a strong focus on cross-device
+                        & browsers optimisation, continuously learning <br />{" "}
+                        and keeping track on new technologies that can improve
+                        my daily workflow.
                     </p>
                     <div className="social-icons">
                         <a

@@ -5,7 +5,7 @@ export default function Experience() {
         <div>
             <div className="overlay" />
             <section
-                className="portfolio-section mt-5 p-3 p-lg-5 d-flex align-items-center"
+                className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="experience"
             >
                 <div className="w-100">

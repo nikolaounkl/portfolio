@@ -5,7 +5,7 @@ export default function Projects() {
         <div>
             <div className="overlay" />
             <section
-                className="portfolio-section p-3 p-lg-5 d-flex align-items-center"
+                className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="projects"
             >
                 <div className="w-100">
@@ -37,6 +37,12 @@ export default function Projects() {
                                     <i className="fab fa-aws" />
                                 </div>
                             </div>
+                            <p>
+                                Farm Nation was a full stack project for a
+                                gaming platform with online farming games. It
+                                was built from scratch, based on Laravel
+                                framework.
+                            </p>
                         </div>
                         <div className="col-md-4">
                             <a
@@ -60,6 +66,12 @@ export default function Projects() {
                                     <i className="fab fa-aws" />
                                 </div>
                             </div>
+                            <p>
+                                A login / register page used from
+                                www.plinga.com. Facebook login, form validation
+                                & page restyling were some of my main
+                                responsibilities.
+                            </p>
                         </div>
                         <div className="col-md-4">
                             <a
@@ -81,6 +93,11 @@ export default function Projects() {
                                     <i className="fab fa-js-square" />
                                 </div>
                             </div>
+                            <p>
+                                The official webpage of T.S.V. Marzahner Füchse
+                                e.V. A tennis club webpage built with Bootstrap
+                                4 framework.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Interests from "./components/Interests";
 import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 
 class App extends Component {
     render() {
@@ -19,11 +20,12 @@ class App extends Component {
 
                 <Switch>
                     <Route path="/" exact component={About} />
-                    <Route path="/experience" component={Experience} />
-                    <Route path="/skills" component={Skills} />
-                    <Route path="/projects" component={Projects} />
-                    <Route path="/interests" component={Interests} />
-                    <Route path="/contact" component={Contact} />
+                    <Route path="/experience" exact component={Experience} />
+                    <Route path="/skills" exact component={Skills} />
+                    <Route path="/projects" exact component={Projects} />
+                    <Route path="/interests" exact component={Interests} />
+                    <Route path="/contact" exact component={Contact} />
+                    <Route component={NotFound} />
                 </Switch>
             </BrowserRouter>
         );
