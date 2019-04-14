@@ -16,7 +16,7 @@ export default function Interests() {
                         it!). <br />
                         With my wife we love travelling and discovering the
                         nature. <br />
-                        Hiking, swimming, basketball and tennis are some of my
+                        Hiking, swimming, basketball and tennis are some of myd
                         favourite activities during the warm months!. <br />
                         In the cold winter days, Netflix, Liverpool FC & NBA are
                         the antidotes. <br />
