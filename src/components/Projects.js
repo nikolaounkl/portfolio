@@ -14,7 +14,7 @@ export default function Projects() {
                         Here it's some of my work
                     </div>
                     <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-6 col-lg-6 col-xl-4 mb-3">
                             <a
                                 href="https://www.farm-nation.com/"
                                 target="_blank"
@@ -44,7 +44,7 @@ export default function Projects() {
                                 framework.
                             </p>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-6 col-lg-6 col-xl-4 mb-3">
                             <a
                                 href="https://www.plinga.com/en/blocky_farm/"
                                 target="_blank"
@@ -73,7 +73,7 @@ export default function Projects() {
                                 responsibilities.
                             </p>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-6 col-lg-6 col-xl-4 mb-3">
                             <a
                                 href="http://www.tennis-fuechse-marzahn.de/"
                                 target="_blank"
@@ -97,6 +97,30 @@ export default function Projects() {
                                 The official webpage of T.S.V. Marzahner Füchse
                                 e.V. A tennis club webpage built with React &
                                 Bulma framework.
+                            </p>
+                        </div>
+                        <div className="col-md-6 col-lg-6 col-xl-4 mb-3">
+                            <a
+                                href="https://powercake.de/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="images/powercake.png"
+                                    alt="Farm Nation"
+                                    className="img-thumbnail"
+                                />
+                            </a>
+                            <div className="imgheading d-flex align-items-center justify-content-between">
+                                Foodtastic
+                                <div>
+                                    <i className="mr-1 fab fa-wordpress" />
+                                    <i className="mr-1 fab fa-elementor" />
+                                </div>
+                            </div>
+                            <p>
+                                Foodtastic was a WordPress project for an
+                                e-shop, created with Elementor & WooCommerce.
                             </p>
                         </div>
                     </div>
