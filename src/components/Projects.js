@@ -75,7 +75,7 @@ export default function Projects() {
                         </div>
                         <div className="col-md-4">
                             <a
-                                href="http://www.tennis-fuechse-marzahn.de/#lageplan"
+                                href="http://www.tennis-fuechse-marzahn.de/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -88,15 +88,15 @@ export default function Projects() {
                             <div className="imgheading d-flex align-items-center justify-content-between">
                                 Tennis Club
                                 <div>
+                                    <i className="fab fa-react" />
                                     <i className="mr-1 fab fa-html5" />
                                     <i className="mr-1 fab fa-css3-alt" />
-                                    <i className="fab fa-js-square" />
                                 </div>
                             </div>
                             <p>
                                 The official webpage of T.S.V. Marzahner Füchse
-                                e.V. A tennis club webpage built with Bootstrap
-                                4 framework.
+                                e.V. A tennis club webpage built with React &
+                                Bulma framework.
                             </p>
                         </div>
                     </div>

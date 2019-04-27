@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -13,7 +13,7 @@ import NotFound from "./components/NotFound";
 class App extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <div className="App">
                     <Navbar />
                 </div>
@@ -27,7 +27,7 @@ class App extends Component {
                     <Route path="/contact" exact component={Contact} />
                     <Route component={NotFound} />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }
