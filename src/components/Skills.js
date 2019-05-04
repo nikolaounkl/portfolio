@@ -34,6 +34,9 @@ export default function Skills() {
                             <i className="fab fa-sass" />
                         </li>
                         <li className="list-inline-item">
+                            <i className="fab fa-bootstrap" />
+                        </li>
+                        <li className="list-inline-item">
                             <i className="fab fa-php" />
                         </li>
                         <li className="list-inline-item">

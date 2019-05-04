@@ -123,6 +123,32 @@ export default function Projects() {
                                 e-shop, created with Elementor & WooCommerce.
                             </p>
                         </div>
+                        <div className="col-md-6 col-lg-6 col-xl-4 mb-3">
+                            <a
+                                href="https://www.plinga.com/corporate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="images/corporate.png"
+                                    alt="Plinga corporate"
+                                    className="img-thumbnail"
+                                />
+                            </a>
+                            <div className="imgheading d-flex align-items-center justify-content-between">
+                                Plinga Corporate
+                                <div>
+                                    <i className="mr-1 fab fa-html5" />
+                                    <i className="mr-1 fab fa-css3-alt" />
+                                    <i className="mr-1 fab fa-bootstrap" />
+                                    <i className="mr-1 fab fa-js-square" />
+                                </div>
+                            </div>
+                            <p>
+                                The corporate page of Plinga Games was a static
+                                webiste, created with Bootstrap 4 framework.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
