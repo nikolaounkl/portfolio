@@ -76,7 +76,7 @@ export default function Experience() {
                                 Intern Front-End Web Developer
                             </h3>
                             <div className="subheading mb-0">
-                                Kiron Open Higher Education gGmbH
+                                Kiron Open Higher Education GmbH
                             </div>
                             <span className="text-primary">
                                 February 2017 - April 2017
