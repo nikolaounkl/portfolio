@@ -1,25 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { createContact } from "../store/actions/contactActions";
+import useForm from "../form/useForm";
+import validate from "../form/ValidationRules";
 
 function Contact() {
     // Declare new state variables and functions
-    const [value, setValue] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-        error: ""
-    });
+    const { values, errors, handleChange, handleSubmit } = useForm(
+        send,
+        validate
+    );
 
-    const handleChange = e => {
-        setValue({
-            ...value,
-            [e.target.id]: e.target.value
-        });
-    };
+    function send() {
+        console.log("No errors, submit callback called!");
+    }
 
-    console.log(value.name);
     return (
         <div>
             <div className="overlay" />
@@ -29,7 +24,7 @@ function Contact() {
             >
                 <div className="w-100">
                     <h2 className="mb-5">Contact</h2>
-                    <form autoComplete="off">
+                    <form autoComplete="off" onSubmit={handleSubmit} noValidate>
                         <div className="form-row">
                             <div className="form-group col-md-6">
                                 <input
@@ -37,10 +32,16 @@ function Contact() {
                                     type="text"
                                     id="name"
                                     onChange={handleChange}
-                                    className="form-control"
-                                    value={value.name}
+                                    className={`form-control ${errors.name &&
+                                        "border border-danger"}`}
+                                    value={values.name || ""}
                                     placeholder="Your Name"
                                 />
+                                {errors.name && (
+                                    <small className="text-danger">
+                                        {errors.name}
+                                    </small>
+                                )}
                             </div>
                             <div className="form-group col-md-6">
                                 <input
@@ -48,10 +49,16 @@ function Contact() {
                                     type="text"
                                     id="email"
                                     onChange={handleChange}
-                                    className="form-control"
-                                    value={value.email}
+                                    className={`form-control ${errors.email &&
+                                        "border border-danger"}`}
+                                    value={values.email || ""}
                                     placeholder="Your Email"
                                 />
+                                {errors.email && (
+                                    <small className="text-danger">
+                                        {errors.email}
+                                    </small>
+                                )}
                             </div>
                         </div>
                         <div className="form-group">
@@ -60,10 +67,16 @@ function Contact() {
                                 type="text"
                                 id="subject"
                                 onChange={handleChange}
-                                className="form-control"
-                                value={value.subject}
+                                className={`form-control ${errors.subject &&
+                                    "border border-danger"}`}
+                                value={values.subject || ""}
                                 placeholder="Your Subject"
                             />
+                            {errors.subject && (
+                                <small className="text-danger">
+                                    {errors.subject}
+                                </small>
+                            )}
                         </div>
                         <div className="form-group">
                             <textarea
@@ -71,13 +84,22 @@ function Contact() {
                                 type="text"
                                 id="message"
                                 onChange={handleChange}
-                                className="form-control"
-                                value={value.message}
+                                className={`form-control ${errors.message &&
+                                    "border border-danger"}`}
+                                value={values.message || ""}
                                 placeholder="Your Message"
                                 rows="7"
                             />
+                            {errors.message && (
+                                <small className="text-danger">
+                                    {errors.message}
+                                </small>
+                            )}
                         </div>
-                        <button className="btn btn-yellow btn-block">
+                        <button
+                            type="submit"
+                            className="btn btn-yellow btn-block"
+                        >
                             Send
                         </button>
                     </form>
