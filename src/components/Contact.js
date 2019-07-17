@@ -6,10 +6,13 @@ import validate from "../form/ValidationRules";
 
 function Contact() {
     // Declare new state variables and functions
-    const { values, errors, handleChange, handleSubmit } = useForm(
-        send,
-        validate
-    );
+    const {
+        values,
+        errors,
+        isSubmitting,
+        handleChange,
+        handleSubmit
+    } = useForm(send, validate);
 
     function send() {
         console.log("No errors, submit callback called!");
@@ -97,6 +100,7 @@ function Contact() {
                             )}
                         </div>
                         <button
+                            disabled={isSubmitting ? true : false}
                             type="submit"
                             className="btn btn-yellow btn-block"
                         >

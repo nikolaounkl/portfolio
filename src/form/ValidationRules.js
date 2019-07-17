@@ -9,7 +9,7 @@ export default function validate(values) {
 
     if (!values.email) {
         errors.email = "Email address is required";
-    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    } else if (/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i.test(values.email)) {
         errors.email = "Email address is invalid";
     }
 
