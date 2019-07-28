@@ -23,7 +23,7 @@ const useForm = (callback, validate) => {
             ...values,
             [event.target.id]: event.target.value
         }));
-        setErrors(validate(values));
+        setErrors(errors => ({}));
     };
 
     return {
