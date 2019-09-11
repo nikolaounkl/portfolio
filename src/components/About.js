@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import uuid from 'uuid/v1';
+import { DataContext } from "../contexts/DataContext";
 
 export default function About() {
+    const { content, socialLinks } = useContext(DataContext);
     return (
         <div>
-            <div className="overlay" />
             <section
                 className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="about"
@@ -19,39 +21,22 @@ export default function About() {
                         <span>FRONT-END WEB DEVELOPER</span>
                     </div>
                     <p className="lead mb-5">
-                        Hi... I'm Nikos, a web developer based in Berlin,
-                        Germany.
+                        {content.about_intro}
                         <br />
                         <br />
-                        My main area of expertise is front-end web development
-                        of web apps.
-                        <br /> With a strong focus on cross-device & browsers
-                        optimisation, continuously learning <br />
-                        and keeping track on new technologies that can improve
-                        my daily workflow.
+                        {content.about_text}
                     </p>
                     <div className="social-icons">
-                        <a
-                            href="https://www.linkedin.com/in/nikolaos-nikolaou-585407127/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="fab fa-linkedin-in" />
-                        </a>
-                        <a
-                            href="https://github.com/nikolaounkl"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="fab fa-github" />
-                        </a>
-                        <a
-                            href="https://codepen.io/nikolaounkl/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="fab fa-codepen" />
-                        </a>
+                        {socialLinks.map(link => (
+                            <a
+                                key={uuid()}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className={link.fa} />
+                            </a>
+                        ))}
                     </div>
                 </div>
             </section>

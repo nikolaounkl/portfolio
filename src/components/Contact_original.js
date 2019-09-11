@@ -33,7 +33,7 @@ class Contact extends Component {
                 error: false
             });
             setTimeout(
-                function() {
+                function () {
                     this.props.history.push("/");
                 }.bind(this),
                 5000
@@ -47,7 +47,6 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <div className="overlay" />
                 <section
                     className="portfolio-section p-3 pt-5 d-flex align-items-center"
                     id="contact"
@@ -115,16 +114,16 @@ class Contact extends Component {
                             }
                         >
                             {this.state.error &&
-                            !this.state.email.match(
-                                /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i
-                            )
+                                !this.state.email.match(
+                                    /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i
+                                )
                                 ? "Use a valid email!"
                                 : this.state.error &&
-                                  this.state.email.match(
-                                      /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i
-                                  )
-                                ? "All fields are required!"
-                                : ""}
+                                    this.state.email.match(
+                                        /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i
+                                    )
+                                    ? "All fields are required!"
+                                    : ""}
                         </p>
                         <p
                             className={

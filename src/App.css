@@ -8,11 +8,15 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url("/images/berlin.jpg");
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.4)
+    ),
+    url("/images/berlin.jpg") center center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 @media (min-width: 992px) {
@@ -86,6 +90,7 @@ p.lead {
 
 p {
     text-align: justify;
+    max-width: 600px;
 }
 
 .subheading {

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../contexts/DataContext";
 
 export default function Interests() {
+    const { content } = useContext(DataContext)
     return (
         <div>
-            <div className="overlay" />
             <section
                 className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="interests"
@@ -11,17 +12,7 @@ export default function Interests() {
                 <div className="w-100">
                     <h2 className="mb-5">Interests</h2>
                     <p>
-                        Apart from being a web developer, I enjoy most of my
-                        time being outdoors (well...as long the weather allows
-                        it!). <br />
-                        With my wife we love travelling and discovering the
-                        nature. <br />
-                        Hiking, swimming, basketball and tennis are some of my
-                        favourite activities during the warm months!. <br />
-                        In the cold winter days, Netflix, Liverpool FC & NBA are
-                        the antidotes. <br />
-                        I'm born and raised in Athens, Greece, which means...
-                        cooking delicious Greek food is my duty!
+                        {content.interests}
                     </p>
                 </div>
             </section>

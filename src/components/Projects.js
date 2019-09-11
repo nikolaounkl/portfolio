@@ -3,7 +3,6 @@ import React from "react";
 export default function Projects() {
     return (
         <div>
-            <div className="overlay" />
             <section
                 className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="projects"

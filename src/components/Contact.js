@@ -20,7 +20,6 @@ function Contact() {
 
     return (
         <div>
-            <div className="overlay" />
             <section
                 className="portfolio-section p-3 pt-5 d-flex align-items-center"
                 id="contact"
@@ -107,6 +106,9 @@ function Contact() {
                             Send
                         </button>
                     </form>
+                    <p className="pt-3">
+                        Your email and name data will be used only to respond to your request. No worries I will not spam you with any kind of other email!
+                    </p>
                 </div>
             </section>
         </div>
