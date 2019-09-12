@@ -12,6 +12,7 @@ const DataContextProvider = props => {
     const [menu, setMenu] = useState([]);
     const [experience, setExperience] = useState([]);
     const [socialLinks, setSocialLinks] = useState([]);
+    const [projects, setProjects] = useState([]);
     const [content, setContent] = useState({});
     const [loading, setLoading] = useState(false);
 
@@ -25,6 +26,7 @@ const DataContextProvider = props => {
         setContent(res.data.content);
         setSocialLinks(res.data.socialLinks);
         setExperience(res.data.experience);
+        setProjects(res.data.projects);
         setLoading(false);
     };
 
@@ -33,7 +35,7 @@ const DataContextProvider = props => {
     }, []);
 
     return (
-        <DataContext.Provider value={{ menu, content, socialLinks, experience, icons, skills, loading }} >
+        <DataContext.Provider value={{ menu, content, socialLinks, experience, icons, skills, projects, loading }} >
             {props.children}
         </DataContext.Provider>
     )

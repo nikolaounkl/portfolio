@@ -24,7 +24,10 @@ export default function About() {
                         {content.about_intro}
                         <br />
                         <br />
-                        {content.about_text}
+                        {content.about_text_1}
+                        <br />
+                        <br />
+                        {content.about_text_2}
                     </p>
                     <div className="social-icons">
                         {socialLinks.map(link => (

@@ -22,8 +22,9 @@
         }
     ],
     "content": {
-        "about_intro": "Hi... I'm Nikos, a web developer based in Berlin, Germany.",
-        "about_text": "My main area of expertise is front-end web development of web apps. With a strong focus on cross-device & browsers optimisation, continuously learning and keeping track on new technologies that can improve my daily workflow.",
+        "about_intro": "Hi... I'm Nikos, a web developer based in Berlin, Germany, with 2+ years of experience as a Full Stack web developer in agile, startups environments.",
+        "about_text_1": "I had the chance to be part of cross functional teams which I believe made me a cool team player, being comfortable in putting my hands in both front-end and back-end projects but as well helped me crystalize my strong passion for front-end development of web apps.",
+        "about_text_2": "Front-end development is my main area of expertise, where I try to combine creativity with simplicity. My goal is always to be able to write maintainable, clean code with a strong focus on cross-device & browsers optimisation and user's experience / value. With a continued desire for learning more about modern front-end frameworks and libraries, I try to improve myself and my daily workflow.",
         "interests": "Apart from being a web developer, I enjoy most of my time being outdoors (well...as long the weather allows it!). With my wife we love travelling and discovering the nature. Hiking, basketball and tennis are some of my favourite activities. In the cold winter days, Netflix, NBA and cooking are the antidotes. I'm born and raised in Athens Greece, which means... cooking delicious Greek food is my duty! I'm a BIG fan of TESLA & SpaceX and in general I like researching about new technologies that can improve our life quality & change the way we see our world!"
     },
     "socialLinks": [
@@ -137,47 +138,158 @@
         {
             "title": "Farm Nation",
             "href": "https://www.farm-nation.com/",
-            "text": "Farm Nation was a full stack project for a gaming platform with online farming games. It was built from scratch, based on Laravel framework."
-        },
-        {
-            "title": "Plinga Games",
-            "href": "https://www.plinga.com/en/blocky_farm/",
-            "text": "A login / register page used from www.plinga.com. Facebook login, form validation & page restyling were some of my main responsibilities."
+            "img": "images/farmnation.png",
+            "text": "Farm Nation was a full stack project for a gaming platform with online farming games. It was built from scratch, based on Laravel framework.",
+            "icons": [
+                {
+                    "fa": "fab fab fa-php"
+                },
+                {
+                    "fa": "fab fab fa-laravel"
+                },
+                {
+                    "fa": "fab fa-html5"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fa-js-square"
+                },
+                {
+                    "fa": "fab fab fa-AWS"
+                }
+            ]
         },
         {
             "title": "SpaceXscanner",
             "href": "https://github.com/nikolaounkl/spacex_scanner",
-            "text": "An App which uses the open source API of SpaceX to track past and future space flights. Was created with Express, GraphQL, React, React Hooks, React Router and Bulma framework."
+            "img": "images/space.png",
+            "text": "An App which uses the open source API of SpaceX to track past and future space flights. Was created with Express, GraphQL, React, React Hooks, React Router and Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
         },
         {
             "title": "Portfolio",
             "href": "http://www.nikolaounikolaos.com/",
-            "text": "My personal website. Was built with React, React Hooks, React Router, Axios and Bootstrap 4 framework."
+            "img": "images/portfolio.png",
+            "text": "My personal website. Was built with React, React Hooks, React Router, Axios and Bootstrap 4 framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fab fa-bootstrap"
+                }
+            ]
+        },
+        {
+            "title": "Plinga Games",
+            "href": "https://www.plinga.com/en/blocky_farm/",
+            "img": "images/plinga.png",
+            "text": "A login / register page used from www.plinga.com. Facebook login, form validation & page restyling were some of my main responsibilities.",
+            "icons": [
+                {
+                    "fa": "fab fa-html5"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fa-js-square"
+                },
+                {
+                    "fa": "fab fab fa-php"
+                },
+                {
+                    "fa": "fab fab fa-AWS"
+                }
+            ]
         },
         {
             "title": "Tennis Club",
             "href": "http://www.tennis-fuechse-marzahn.de/",
-            "text": "The official webpage of T.S.V. Marzahner Füchse e.V. A tennis club webpage built with React, React Router & Bulma framework."
+            "img": "images/tennis.png",
+            "text": "The official webpage of T.S.V. Marzahner Füchse e.V. A tennis club webpage built with React, React Router & Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
         },
         {
             "title": "Foodtastic",
             "href": "https://powercake.de",
-            "text": "Foodtastic was a WordPress project for an e-shop, created with Elementor & WooCommerce."
+            "img": "images/powercake.png",
+            "text": "Foodtastic was a WordPress project for an e-shop, created with Elementor & WooCommerce.",
+            "icons": [
+                {
+                    "fa": "fab fa-wordpress"
+                },
+                {
+                    "fa": "fab fa-elementor"
+                }
+            ]
+        },
+        {
+            "title": "Theme Switch",
+            "href": "https://nikolaounkl.github.io/nkl/",
+            "img": "images/nkl.png",
+            "text": "A Test App to switch between dark or light theme. Was created with React, React Hooks and Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
         },
         {
             "title": "Plinga Corporate",
             "href": "https://www.plinga.com/corporate",
-            "text": "The corporate page of Plinga Games was a static webiste, created with Bootstrap 4 framework."
+            "img": "images/corporate.png",
+            "text": "The corporate page of Plinga Games was a static webiste, created with Bootstrap 4 framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-html5"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fab fa-bootstrap"
+                },
+                {
+                    "fa": "fab fa-js-square"
+                }
+            ]
         },
         {
             "title": "Jam Around",
             "href": "https://nikolaounkl.github.io/jam_around/",
-            "text": "A Test App to play around, created with React and Bulma framework."
-        },
-        {
-            "title": "NKL",
-            "href": "https://nikolaounkl.github.io/nkl/",
-            "text": "A Test App to simple change dark or light theme, created with React, React Hooks and Bulma framework."
+            "img": "images/jam.png",
+            "text": "A Test App to play around, created with React and Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
         }
     ]
 }
