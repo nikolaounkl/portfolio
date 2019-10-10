@@ -1,0 +1,295 @@
+{
+    "menu": [
+        {
+            "to": "/",
+            "fa": "fas fa-address-card fa-2x"
+        },
+        {
+            "to": "/skills",
+            "fa": "fas fa-cogs fa-2x"
+        },
+        {
+            "to": "/experience",
+            "fa": "fas fa-history fa-2x"
+        },
+        {
+            "to": "/projects",
+            "fa": "fas fa-images fa-2x"
+        },
+        {
+            "to": "/interests",
+            "fa": "fas fa-thumbs-up fa-2x"
+        }
+    ],
+    "content": {
+        "about_intro": "Hi... I'm Nikos, a web developer based in Berlin, Germany, with 2+ years of experience as a Full Stack web developer in agile, startups environments.",
+        "about_text_1": "I had the chance to be part of cross functional teams which I believe made me a cool team player, being comfortable in putting my hands in both front-end and back-end projects but as well helped me crystalize my strong passion for front-end development of web apps.",
+        "about_text_2": "Front-end development is my main area of expertise, where I try to combine creativity with simplicity. My goal is always to be able to write maintainable, clean code with a strong focus on cross-device & browsers optimisation and user's experience / value. With a continued desire for learning more about modern front-end frameworks and libraries, I try to improve myself and my daily workflow.",
+        "interests": "Apart from being a web developer, I enjoy most of my time being outdoors (well...as long the weather allows it!). With my wife we love travelling and discovering the nature. Hiking, basketball and tennis are some of my favourite activities. In the cold winter days, Netflix, NBA and cooking are the antidotes. I'm born and raised in Athens Greece, which means... cooking delicious Greek food is my duty! I'm a BIG fan of TESLA & SpaceX and in general I like researching about new technologies that can improve our life quality & change the way we see our world!"
+    },
+    "socialLinks": [
+        {
+            "href": "https://www.linkedin.com/in/nikolaos-nikolaou-585407127/",
+            "fa": "fab fa-linkedin-in"
+        },
+        {
+            "href": "https://github.com/nikolaounkl",
+            "fa": "fab fa-github"
+        },
+        {
+            "href": "https://codepen.io/nikolaounkl/",
+            "fa": "fab fa-codepen"
+        },
+        {
+            "href": "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=nikos.nikolaou.dev@gmail.com&tf=1",
+            "fa": "fas fa-envelope"
+        }
+    ],
+    "skills": [
+        {
+            "workflow": "Front-end Web Development"
+        },
+        {
+            "workflow": "Back-end Web Development"
+        },
+        {
+            "workflow": "Cloud Services"
+        },
+        {
+            "workflow": "Working with APIs"
+        },
+        {
+            "workflow": "Cross Devices optimisation"
+        },
+        {
+            "workflow": "Responsive Design"
+        },
+        {
+            "workflow": "Cross Browser Testing & Debugging"
+        },
+        {
+            "workflow": "Agile software development with Scrum"
+        }
+    ],
+    "icons": [
+        {
+            "fa": "fab fa-html5"
+        },
+        {
+            "fa": "fab fa-css3-alt"
+        },
+        {
+            "fa": "fab fa-js-square"
+        },
+        {
+            "fa": "fab fa-react"
+        },
+        {
+            "fa": "fab fa-sass"
+        },
+        {
+            "fa": "fab fa-bootstrap"
+        },
+        {
+            "fa": "fab fa-php"
+        },
+        {
+            "fa": "fab fa-laravel"
+        },
+        {
+            "fa": "fab fa-aws"
+        },
+        {
+            "fa": "fab fa-npm"
+        },
+        {
+            "fa": "fab fa-git-square"
+        },
+        {
+            "fa": "fab fa-wordpress"
+        },
+        {
+            "fa": "fab fa-elementor"
+        }
+    ],
+    "experience": [
+        {
+            "title": "JUNIOR WEB DEVELOPER",
+            "company": "Plinga GmbH",
+            "time": "October 2017 - Present"
+        },
+        {
+            "title": "FRONT-END WEB DEVELOPMER",
+            "company": "Freelancer",
+            "time": "June 2016 - Present"
+        },
+        {
+            "title": "INTERN FRONT-END WEB DEVELOPER",
+            "company": "store2be GmbH",
+            "time": "May 2017 - July 2017"
+        },
+        {
+            "title": "INTERN FRONT-END WEB DEVELOPER",
+            "company": "Kiron Open Higher Education GmbH",
+            "time": "February 2017 - April 2017"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Farm Nation",
+            "href": "https://www.farm-nation.com/",
+            "img": "images/farmnation.png",
+            "text": "Farm Nation was a full stack project for a gaming platform with online farming games. It was built from scratch, based on Laravel framework.",
+            "icons": [
+                {
+                    "fa": "fab fab fa-php"
+                },
+                {
+                    "fa": "fab fab fa-laravel"
+                },
+                {
+                    "fa": "fab fa-html5"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fa-js-square"
+                },
+                {
+                    "fa": "fab fab fa-AWS"
+                }
+            ]
+        },
+        {
+            "title": "SpaceXscanner",
+            "href": "https://github.com/nikolaounkl/spacex_scanner",
+            "img": "images/space.png",
+            "text": "An App which uses the open source API of SpaceX to track past and future space flights. Was created with Express, GraphQL, React, React Hooks, React Router and Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
+        },
+        {
+            "title": "Portfolio",
+            "href": "http://www.nikolaounikolaos.com/",
+            "img": "images/portfolio.png",
+            "text": "My personal website. Was built with React, React Hooks, React Router, Axios and Bootstrap 4 framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fab fa-bootstrap"
+                }
+            ]
+        },
+        {
+            "title": "Plinga Games",
+            "href": "https://www.plinga.com/en/blocky_farm/",
+            "img": "images/plinga.png",
+            "text": "A login / register page used from www.plinga.com. Facebook login, form validation & page restyling were some of my main responsibilities.",
+            "icons": [
+                {
+                    "fa": "fab fa-html5"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fa-js-square"
+                },
+                {
+                    "fa": "fab fab fa-php"
+                },
+                {
+                    "fa": "fab fab fa-AWS"
+                }
+            ]
+        },
+        {
+            "title": "Tennis Club",
+            "href": "http://www.tennis-fuechse-marzahn.de/",
+            "img": "images/tennis.png",
+            "text": "The official webpage of T.S.V. Marzahner Füchse e.V. A tennis club webpage built with React, React Router & Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
+        },
+        {
+            "title": "Foodtastic",
+            "href": "https://powercake.de",
+            "img": "images/powercake.png",
+            "text": "Foodtastic was a WordPress project for an e-shop, created with Elementor & WooCommerce.",
+            "icons": [
+                {
+                    "fa": "fab fa-wordpress"
+                },
+                {
+                    "fa": "fab fa-elementor"
+                }
+            ]
+        },
+        {
+            "title": "Theme Switch",
+            "href": "https://nikolaounkl.github.io/nkl/",
+            "img": "images/nkl.png",
+            "text": "A Test App to switch between dark or light theme. Was created with React, React Hooks and Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
+        },
+        {
+            "title": "Plinga Corporate",
+            "href": "https://www.plinga.com/corporate",
+            "img": "images/corporate.png",
+            "text": "The corporate page of Plinga Games was a static webiste, created with Bootstrap 4 framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-html5"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                },
+                {
+                    "fa": "fab fab fa-bootstrap"
+                },
+                {
+                    "fa": "fab fa-js-square"
+                }
+            ]
+        },
+        {
+            "title": "Jam Around",
+            "href": "https://nikolaounkl.github.io/jam_around/",
+            "img": "images/jam.png",
+            "text": "A Test App to play around, created with React and Bulma framework.",
+            "icons": [
+                {
+                    "fa": "fab fa-react"
+                },
+                {
+                    "fa": "fab fa-css3-alt"
+                }
+            ]
+        }
+    ]
+}
